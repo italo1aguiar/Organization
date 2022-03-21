@@ -9,7 +9,7 @@ namespace Infrastructure
 	{
         public static IServiceCollection ConfigureInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.Configure<Application.Models.EmailSettings>(configuration.GetSection("EmailSettings"));
+            //services.Configure<Application.Models.EmailSettings>(configuration.GetSection("EmailSettings"));
 
             services.AddTransient<IEmailSender, MailSender>();
             
