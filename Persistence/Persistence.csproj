@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Repositories\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Mapping\" />
+    <None Remove="Infrastructure\obj\Infrastructure.csproj.nuget.g.props" />
+    <None Remove="Infrastructure\obj\Infrastructure.csproj.nuget.g.targets" />
+    <None Remove="Infrastructure\obj\project.assets.json" />
+    <None Remove="Infrastructure\obj\project.nuget.cache" />
+    <None Remove="Infrastructure\obj\Infrastructure.csproj.nuget.dgspec.json" />
+    <None Remove="Infrastructure\obj\Debug\netstandard2.1\Infrastructure.assets.cache" />
+    <None Remove="Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.AssemblyReference.cache" />
+    <None Remove="Infrastructure\obj\Debug\netstandard2.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfoInputs.cache" />
+    <None Remove="Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.CoreCompileInputs.cache" />
+    <None Remove="Infrastructure\obj\Debug\netstandard2.1\Infrastructure.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+    <Folder Include="Mapping\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.15" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.15" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Core\Domain\Application\Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Infrastructure\InfrastructureServiceRegistration.cs" />
+    <Compile Remove="Infrastructure\obj\Debug\netstandard2.1\.NETStandard,Version=v2.1.AssemblyAttributes.cs" />
+    <Compile Remove="Infrastructure\obj\Debug\netstandard2.1\Infrastructure.AssemblyInfo.cs" />
+    <Compile Remove="Infrastructure\Mail\Mail.cs" />
+    <Compile Remove="Infrastructure\Mail\MailSender.cs" />
+  </ItemGroup>
+</Project>

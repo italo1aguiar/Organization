@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DTOs\" />
+    <None Remove="DTOs\CreateFuncionarioDto\" />
+    <None Remove="Persistence\" />
+    <None Remove="Persistence\Contracts\" />
+    <None Remove="Features\" />
+    <None Remove="Features\Funcionario\" />
+    <None Remove="Features\Funcionario\Handlers\" />
+    <None Remove="Features\Funcionario\Requests\" />
+    <None Remove="Features\Funcionario\Handlers\Commands\" />
+    <None Remove="Features\Funcionario\Handlers\Queries\" />
+    <None Remove="Features\Funcionario\Requests\Commands\" />
+    <None Remove="Features\Funcionario\Requests\Queries\" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Reponses\" />
+    <None Remove="DTOs\Responses\" />
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+    <Folder Include="DTOs\Funcionario\" />
+    <Folder Include="Persistence\" />
+    <Folder Include="Persistence\Contracts\" />
+    <Folder Include="Features\" />
+    <Folder Include="Features\Funcionario\" />
+    <Folder Include="Features\Funcionario\Handlers\" />
+    <Folder Include="Features\Funcionario\Requests\" />
+    <Folder Include="Features\Funcionario\Handlers\Commands\" />
+    <Folder Include="Features\Funcionario\Handlers\Queries\" />
+    <Folder Include="Features\Funcionario\Requests\Commands\" />
+    <Folder Include="Features\Funcionario\Requests\Queries\" />
+    <Folder Include="Reponses\" />
+    <Folder Include="DTOs\Responses\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+  </ItemGroup>
+</Project>

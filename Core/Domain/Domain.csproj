@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Application\Class1.cs" />
+    <Compile Remove="Application\obj\Debug\netstandard2.1\.NETStandard,Version=v2.1.AssemblyAttributes.cs" />
+    <Compile Remove="Application\obj\Debug\netstandard2.1\Application.AssemblyInfo.cs" />
+    <Compile Remove="Application\ApplicationServicesRegistration.cs" />
+    <Compile Remove="Application\DTOs\Funcionario\CreateFuncionarioDto.cs" />
+    <Compile Remove="Application\Persistence\Contracts\IFuncionarioRepository.cs" />
+    <Compile Remove="Application\Features\Funcionario\Requests\Commands\CreateNewFuncionario.cs" />
+    <Compile Remove="Application\Features\Funcionario\Handlers\Commands\CreateNewFuncionarioCommandHandler.cs" />
+    <Compile Remove="Application\Features\Funcionario\Requests\Commands\CreateNewFuncionarioCommand.cs" />
+    <Compile Remove="Application\DTOs\Responses\CreateNewFuncionarioResponse.cs" />
+    <Compile Remove="Application\Models\Email.cs" />
+    <Compile Remove="Application\Persistence\Contracts\IEmailSender.cs" />
+    <Compile Remove="Application\Models\EmailSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Application\obj\Application.csproj.nuget.g.props" />
+    <None Remove="Application\obj\Application.csproj.nuget.g.targets" />
+    <None Remove="Application\obj\project.assets.json" />
+    <None Remove="Application\obj\project.nuget.cache" />
+    <None Remove="Application\obj\Application.csproj.nuget.dgspec.json" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.assets.cache" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.csproj.AssemblyReference.cache" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.AssemblyInfoInputs.cache" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.csproj.CoreCompileInputs.cache" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.csproj.FileListAbsolute.txt" />
+    <None Remove="Application\bin\Debug\netstandard2.1\Domain.pdb" />
+    <None Remove="Application\bin\Debug\netstandard2.1\Domain.dll" />
+    <None Remove="Application\bin\Debug\netstandard2.1\Application.deps.json" />
+    <None Remove="Application\bin\Debug\netstandard2.1\Application.dll" />
+    <None Remove="Application\bin\Debug\netstandard2.1\Application.pdb" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.dll" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.pdb" />
+    <None Remove="Application\obj\Debug\netstandard2.1\Application.csproj.CopyComplete" />
+  </ItemGroup>
+</Project>
