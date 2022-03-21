@@ -1,5 +1,7 @@
 ﻿
 
+using Application.Persistence.Contracts;
+using Infrastructure.Mail;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
